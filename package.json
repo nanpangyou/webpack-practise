@@ -1,0 +1,39 @@
+{
+  "name": "webpack-practise",
+  "version": "1.0.0",
+  "description": "手动搭建工程",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx webpack --config ./build/webpack.config.base.js",
+    "client": "npx webpack --config ./build/webpack.config.client.js",
+    "cdev": "npx rimraf ./dist/dev && npx webpack --config ./build/webpack.config.base.js",
+    "cclient": "npx rimraf ./dist/client && npx webpack --config ./build/webpack.config.client.js",
+    "start": "npx webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nanpangyou/webpack-practise.git"
+  },
+  "keywords": [
+    "webpack",
+    "npm",
+    "vue"
+  ],
+  "author": "nanpangyou",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nanpangyou/webpack-practise/issues"
+  },
+  "homepage": "https://github.com/nanpangyou/webpack-practise#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^3.2.0",
+    "lodash": "^4.17.15",
+    "rimraf": "^2.6.3",
+    "vue": "^2.6.10",
+    "webpack": "^4.38.0",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2",
+    "webpack-merge": "^4.2.1"
+  }
+}
