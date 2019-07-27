@@ -1,4 +1,6 @@
-let div = document.createElement("div");
-div.innerText = "success";
-document.querySelector("body").append(div);
-console.log("success");
+import Vue from "vue";
+import main from "./components/main.vue";
+
+new Vue({
+  render: c => c(main)
+}).$mount(".root");

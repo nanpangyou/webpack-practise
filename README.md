@@ -3,7 +3,7 @@ build a front-end project from beginning
 
 从头搭建一个前端工程，不用cli工具，练习一下webpack的各种配置
 
-框架选择 Vue 
+框架选择 Vue
 
 day1:
 目前已经搭建了webpack
@@ -12,10 +12,21 @@ day1:
 每次打包前借助 rimraf 包来删除上次打包的文件。
 成功安装了 webpack-dev-server 并且成功启动。
 
-TODO： 
+TODO：
 实现 webpack-dev-server 的配置，实现热更新，自动打开浏览器等功能
 配置不同的 loader ，以实现对不同文件的解析
 优化打包树，看能否将静态文件按照 src 文件的目录树打包
-增加 eslint editorconfig 之类的控件  
+增加 eslint editorconfig 之类的控件
 
 「暂时想到这些，周末快乐」
+
+day2:
+
+实现 webpack-dev-server 的配置，实现热更新，自动打开浏览器等功能 ✅
+配置不同的 loader ，以实现对不同文件的解析 ✅
+优化打包树，看能否将静态文件按照 src 文件的目录树打包 ✅
+增加 eslint editorconfig 之类的控件 ✅
+
+除此以外还增加了 postcss 做 css 的预处理。
+
+暂时就用这套配置了。还有很多欠缺和不太明白的地方，日后陆续增加和学习。
